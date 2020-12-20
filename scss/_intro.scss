@@ -1,0 +1,26 @@
+@import "_font.scss";
+@import "_variable.scss";
+
+.Intro {
+  // Spacing
+  padding: 10rem 5rem;
+}
+
+@media (max-width: 1100px) {
+  .Intro {
+  }
+}
+
+@media (max-width: 900px) {
+  .Intro {
+  }
+}
+@media (max-width: 868px) {
+  .Intro {
+  }
+}
+
+@media (max-width: 380px) {
+  .Intro {
+  }
+}
