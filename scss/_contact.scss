@@ -1,0 +1,31 @@
+@import "_font.scss";
+@import "_variable.scss";
+
+.Contact {
+  // Spacing
+  padding: 20rem 10rem;
+}
+// Laptop Screen Size
+@media (max-width: 1100px) {
+  .Contact {
+    padding: 10rem 5rem;
+  }
+}
+// iPad Pro Screen Size
+@media (max-width: 900px) {
+  .Contact {
+    padding: 10rem 5rem;
+  }
+}
+// iPad / Tablet Screen size
+@media (max-width: 868px) {
+  .Contact {
+    padding: 10rem 5rem;
+  }
+}
+// Phone Screen Size
+@media (max-width: 380px) {
+  .Contact {
+    padding: 10rem 2rem;
+  }
+}

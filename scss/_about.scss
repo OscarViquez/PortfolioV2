@@ -3,32 +3,39 @@
 
 .About {
   // Spacing
-  padding: 10rem 5rem;
+  padding: 20rem 10rem;
 
   .About-title {
+    // Fonts
     font-family: $Playfair;
   }
 
   .About-description {
+    // Fonts
     font-family: $Fauna;
   }
 }
-
+// Laptop Screen Size
 @media (max-width: 1100px) {
   .About {
+    padding: 10rem 5rem;
   }
 }
-
+// iPad Pro Screen Size
 @media (max-width: 900px) {
   .About {
+    padding: 10rem 5rem;
   }
 }
+// iPad / Tablet Screen size
 @media (max-width: 868px) {
   .About {
+    padding: 10rem 5rem;
   }
 }
-
+// Phone Screen Size
 @media (max-width: 380px) {
   .About {
+    padding: 10rem 2rem;
   }
 }
