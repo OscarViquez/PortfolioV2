@@ -3,18 +3,20 @@
 
 .Intro {
   // Spacing
-  padding: 25rem 20rem;
+  padding: 25rem 30rem;
+  // margin: 25rem 20rem;
+  // background: $purple1;
 
   .Intro-name {
     // Font
-    font-family: $Playfair;
+    font-family: $Poppins;
     font-size: size(mega-large);
     font-weight: weight(bold);
   }
 
   .Intro-job {
     // Font
-    font-family: $Playfair;
+    font-family: $Poppins;
     font-size: size(large);
     font-weight: weight(bold);
     // Font Color
@@ -25,7 +27,7 @@
 
   .Intro-details {
     // Font
-    font-family: $Playfair;
+    font-family: $Poppins;
     font-size: size(medium);
     font-weight: weight(medium);
     // Spacing
@@ -40,28 +42,20 @@
 // Laptop Screen Size ---------
 @media (max-width: 1100px) {
   .Intro {
-    padding: 30rem 5rem;
-
     .Intro-name {
       // Font
-      font-size: size(super-large);
-      font-weight: weight(bold);
     }
 
     .Intro-job {
       // Font
-      font-size: size(med-large);
-      font-weight: weight(bold);
+
       // Spacing
-      margin: 1rem 0;
     }
 
     .Intro-details {
       // Font
-      font-size: size(medium);
-      font-weight: weight(medium);
+
       // Spacing
-      margin: 1rem 0;
     }
   }
 }
@@ -70,8 +64,6 @@
 @media (max-width: 900px) {
   .Intro {
     // spacing
-    padding: 20rem 4rem;
-    
   }
 }
 
@@ -79,28 +71,21 @@
 @media (max-width: 868px) {
   .Intro {
     // spacing
-    padding: 20rem 4rem;
 
     .Intro-name {
       // Font
-      font-size: size(large);
-      font-weight: weight(bold);
     }
 
     .Intro-job {
       // Font
-      font-size: size(regular);
-      font-weight: weight(bold);
+
       // Spacing
-      margin: 1rem 0;
     }
 
     .Intro-details {
       // Font
-      font-size: size(medium);
-      font-weight: weight(medium);
+
       // Spacing
-      margin: 1rem 0;
     }
   }
 }
@@ -109,28 +94,21 @@
 @media (max-width: 680px) {
   .Intro {
     // Spacing
-    padding: 15rem 2rem;
 
     .Intro-name {
       // Font
-      font-size: size(med-large);
-      font-weight: weight(bold);
     }
 
     .Intro-job {
       // Font
-      font-size: size(medium);
-      font-weight: weight(bold);
+
       // Spacing
-      margin: 1rem 0;
     }
 
     .Intro-details {
       // Font
-      font-size: size(small);
-      font-weight: weight(medium);
+
       // Spacing
-      margin: 1rem 0;
     }
   }
 }
@@ -138,28 +116,45 @@
 // Phone Screen Size ---------
 @media (max-width: 380px) {
   .Intro {
-    padding: 15rem 2rem;
+    text-align: center;
+    padding: 10rem 1rem 10rem;
 
     .Intro-name {
-      // Font
+      // Font/ Text Styling
+      font-family: $Poppins;
       font-size: size(med-large);
-      font-weight: weight(bold);
+      font-weight: weight(medium);
+
+      margin: 5rem 0 1rem 0;
+      // padding: 5rem 0;
     }
 
     .Intro-job {
-      // Font
+      // Font/ Text Styling
+      font-family: $Poppins;
       font-size: size(medium);
-      font-weight: weight(bold);
+      font-weight: weight(medium);
       // Spacing
-      margin: 1rem 0;
+      margin: 1rem 0rem;
     }
 
     .Intro-details {
-      // Font
+      // Font/ Text Styling
+      font-family: $Poppins;
       font-size: size(small);
-      font-weight: weight(medium);
+      font-weight: weight(med-low);
+
       // Spacing
-      margin: 1rem 0;
+      margin: 1rem 0rem;
     }
+    .fa-chevron-down {
+      font-size: size(regular);
+
+      margin: 15rem 0 0 0;
+
+      scroll-behavior: smooth;
+    }
+
+
   }
 }

@@ -9,10 +9,22 @@
 @import "_about.scss";
 @import "_contact.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  background: $white;
+
+  text-decoration: none;
+  list-style: none;
+}
+
 // 1100px = Desktop
 // 900px = iPad Pro
 // 868px = iPad
 // 380px = Phone
-
 
 // box-shadow: #7949fd 5px 5px, #8154ff 10px 10px, #9069fc 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;

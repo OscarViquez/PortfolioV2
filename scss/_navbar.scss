@@ -7,13 +7,15 @@
 }
 
 .navbar.scrolled {
-  background-color: $white !important;
+  background-color: transparent !important;
   transition: background-color 200ms linear;
+  backdrop-filter: blur(20px);
 }
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
+
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -47,9 +49,9 @@
   justify-content: space-between;
 }
 .navbar .logo a{
-  color: #1b1b1b;
+  color: #9e7cfc;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 .navbar .menu-list{
@@ -64,15 +66,15 @@
   font-weight: 500;
   margin-left: 25px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 .menu-list li a:hover{
   color: #713eff;
 }
 
 .icon{
-  color: #1b1b1b;
-  font-size: 20px;
+  color: #9e7cfc;
+  font-size: 25px;
   cursor: pointer;
   display: none;
 }

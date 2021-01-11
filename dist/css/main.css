@@ -15,9 +15,11 @@
 }
 
 .navbar.scrolled {
-  background-color: #fff !important;
+  background-color: transparent !important;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 /* custom scroll bar */
@@ -76,9 +78,9 @@
 }
 
 .navbar .logo a {
-  color: #1b1b1b;
+  color: #9e7cfc;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -98,8 +100,8 @@
   font-weight: 500;
   margin-left: 25px;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .menu-list li a:hover {
@@ -107,8 +109,8 @@
 }
 
 .icon {
-  color: #1b1b1b;
-  font-size: 20px;
+  color: #9e7cfc;
+  font-size: 25px;
   cursor: pointer;
   display: none;
 }
@@ -193,24 +195,18 @@
   }
 }
 
-body {
-  background: #fff;
-  text-decoration: none;
-  list-style: none;
-}
-
 .Intro {
-  padding: 25rem 20rem;
+  padding: 25rem 30rem;
 }
 
 .Intro .Intro-name {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 75px;
   font-weight: 700;
 }
 
 .Intro .Intro-job {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 55px;
   font-weight: 700;
   color: #713eff;
@@ -218,317 +214,123 @@ body {
 }
 
 .Intro .Intro-details {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 550;
   margin: 1rem 0;
 }
 
-@media (max-width: 1100px) {
-  .Intro {
-    padding: 30rem 5rem;
-  }
-  .Intro .Intro-name {
-    font-size: 65px;
-    font-weight: 700;
-  }
-  .Intro .Intro-job {
-    font-size: 45px;
-    font-weight: 700;
-    margin: 1rem 0;
-  }
-  .Intro .Intro-details {
-    font-size: 25px;
-    font-weight: 550;
-    margin: 1rem 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .Intro {
-    padding: 20rem 4rem;
-  }
-}
-
-@media (max-width: 868px) {
-  .Intro {
-    padding: 20rem 4rem;
-  }
-  .Intro .Intro-name {
-    font-size: 55px;
-    font-weight: 700;
-  }
-  .Intro .Intro-job {
-    font-size: 35px;
-    font-weight: 700;
-    margin: 1rem 0;
-  }
-  .Intro .Intro-details {
-    font-size: 25px;
-    font-weight: 550;
-    margin: 1rem 0;
-  }
-}
-
-@media (max-width: 680px) {
-  .Intro {
-    padding: 15rem 2rem;
-  }
-  .Intro .Intro-name {
-    font-size: 45px;
-    font-weight: 700;
-  }
-  .Intro .Intro-job {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 1rem 0;
-  }
-  .Intro .Intro-details {
-    font-size: 20px;
-    font-weight: 550;
-    margin: 1rem 0;
-  }
-}
-
 @media (max-width: 380px) {
   .Intro {
-    padding: 15rem 2rem;
+    text-align: center;
+    padding: 10rem 1rem 10rem;
   }
   .Intro .Intro-name {
+    font-family: "Poppins", sans-serif;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 550;
+    margin: 5rem 0 1rem 0;
   }
   .Intro .Intro-job {
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
-    font-weight: 700;
-    margin: 1rem 0;
+    font-weight: 550;
+    margin: 1rem 0rem;
   }
   .Intro .Intro-details {
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-weight: 550;
-    margin: 1rem 0;
+    font-weight: 300;
+    margin: 1rem 0rem;
   }
-}
-
-.Project-title {
-  padding: 10rem 10rem;
-  font-family: "Playfair Display", serif;
-  font-size: 55px;
-  font-weight: 700;
-}
-
-@media (max-width: 1100px) {
-  .Project-title {
-    padding: 10rem 5rem 0 5rem;
-    font-size: 45px;
-    font-weight: 700;
-  }
-}
-
-@media (max-width: 900px) {
-  .Project-title {
-    padding: 10rem 4rem 0 4rem;
-    font-size: 45px;
-    font-weight: 700;
-  }
-}
-
-@media (max-width: 868px) {
-  .Project-title {
-    padding: 10rem 4rem 0 4rem;
+  .Intro .fa-chevron-down {
     font-size: 35px;
-    font-weight: 700;
+    margin: 15rem 0 0 0;
+    scroll-behavior: smooth;
   }
 }
 
-@media (max-width: 680px) {
-  .Project-title {
-    padding: 10rem 2rem 0 2rem;
-    font-size: 35px;
-    font-weight: 700;
-  }
-}
-
-@media (max-width: 380px) {
-  .Project-title {
-    padding: 8rem 1rem 0 2rem;
-    font-size: 30px;
-    font-weight: 700;
-  }
-}
-
-.Card {
-  padding: 0 10rem 20rem 10rem;
-}
-
+/* */
 .Card .Card-title {
   font-family: "Playfair Display", serif;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 550;
 }
 
 .Card .Card-description {
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 200;
-}
-
-@media (max-width: 1100px) {
-  .Card {
-    padding: 0 10rem 20rem 10rem;
-  }
-}
-
-@media (max-width: 868px) {
-  .Card {
-    padding: 4rem 4rem 8rem 4rem;
-  }
-  .Card .Card-title {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0 0 2rem 0;
-  }
-  .Card .Card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    padding: 0;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-container {
-    margin: 1rem 0;
-    padding: 2rem 1rem;
-    border-radius: 20px;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-description {
-    font-size: 16px;
-    font-weight: 200;
-  }
-  .Card .Button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .Card .Card-button {
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 0 0.5rem;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-button-link {
-    color: #1b1b1b;
-    text-decoration: none;
-  }
-}
-
-@media (max-width: 680px) {
-  .Card {
-    padding: 4rem 2rem 8rem 2rem;
-  }
-  .Card .Card-title {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0 0 2rem 0;
-  }
-  .Card .Card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    padding: 0;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-container {
-    margin: 1rem 0;
-    padding: 2rem 1rem;
-    border-radius: 20px;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-description {
-    font-size: 16px;
-    font-weight: 200;
-  }
-  .Card .Button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .Card .Card-button {
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 0 0.5rem;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-button-link {
-    color: #1b1b1b;
-    text-decoration: none;
-  }
 }
 
 @media (max-width: 380px) {
   .Card {
-    padding: 4rem 2rem 8rem 2rem;
-  }
-  .Card .Card-title {
-    font-size: 20px;
-    font-weight: 700;
-    padding: 0 0 2rem 0;
-  }
-  .Card .Card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    padding: 0;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: url("/images/Phone3-zip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
   }
   .Card .Card-container {
-    margin: 1rem 0;
-    padding: 2rem 1rem;
-    border-radius: 20px;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .Card .Card-description {
-    font-size: 16px;
-    font-weight: 200;
+    margin: 0;
+    padding: 20rem 1rem 13rem 1rem;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
   .Card .Button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .Card .Card-button {
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 0 0.5rem;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
   .Card .Card-button-link {
-    color: #1b1b1b;
     text-decoration: none;
+  }
+  .Card-1 {
+    background: url("/images/Phone1-zip.jpg");
+    text-align: center;
+  }
+  .Card-1 .Card-1_title {
+    /* Text Styling - Font Styling */
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .Card-1 .Card-1_description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .Card-2 {
+    background: url("/images/CBBScreenshot.jpg");
+    color: whitesmoke;
+    text-align: center;
+  }
+  .Card-2 .Card-2_container {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .Card-2 .Card-2_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .Card-2 .Card-2_description {
+    font-size: 20px;
+    font-weight: 550;
+  }
+  .Card-3 {
+    background: url("/images/Phone3-zip.jpg");
+    text-align: center;
+  }
+  .Card-3 .Card-3_container {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .Card-3 .Card-3_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .Card-3 .Card-3_description {
+    font-size: 20px;
+    font-weight: 300;
   }
 }
 
@@ -594,5 +396,17 @@ body {
   .Contact {
     padding: 10rem 2rem;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  text-decoration: none;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

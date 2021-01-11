@@ -5,6 +5,7 @@
 //font-weights
 $font-weights: (
   "low": 200,
+  "med-low": 300,
   "regular": 400,
   "medium": 550,
   "bold": 700,
@@ -23,8 +24,9 @@ $font-size: (
 );
 
 //fonts
+
 $Fauna: "Fauna One", serif;
-$Playfair: "Playfair Display", serif;
+$Playfair: 'Playfair Display', serif;
 $Poppins: 'Poppins', sans-serif;
 
 // font-functions

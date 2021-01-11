@@ -1,15 +1,16 @@
 @import "_font.scss";
 @import "_variable.scss";
-
+@import "_mixins";
+/* */
 .Card {
   // Spacing
-  padding: 0 10rem 20rem 10rem;
+  // padding: 0 10rem 20rem 10rem;
   // background: $black;
 
   .Card-title {
     // Font Styling
     font-family: $Playfair;
-    font-size: size(regular);
+    font-size: size(small);
     font-weight: weight(medium);
     // color: $white;
   }
@@ -17,86 +18,10 @@
   .Card-description {
     // Font Style
     font-family: $Poppins;
-    font-size: size(regular);
+    font-size: size(small);
     font-weight: weight(low);
     // Color
     // color: $white;
-  }
-}
-// Laptop Screen Size  --------------------------
-@media (max-width: 1100px) {
-  .Card {
-    // Spacing
-    padding: 0 10rem 20rem 10rem;
-  }
-}
-// iPad Pro Screen Size ---------------------------
-@media (max-width: 900px) {
-  .Card {
-  }
-}
-// iPad / Tablet Screen size  ---------------------
-@media (max-width: 868px) {
-  .Card {
-    // Spacing
-    padding: 4rem 4rem 8rem 4rem;
-
-    .Card-title {
-      // Font Styling
-      font-size: size(small);
-      font-weight: weight(bold);
-      // Spacing
-      padding: 0 0 2rem 0;
-    }
-
-    .Card-image {
-      // Size
-      width: 100%;
-      height: auto;
-      // Border Properties
-      border-radius: 20px;
-      // Spacing
-      padding: 0;
-      // Shadow
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-
-    .Card-container {
-      // Spacing
-      margin: 1rem 0;
-      padding: 2rem 1rem;
-      // Border Properties
-      border-radius: 20px;
-      // Shadow
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-
-    .Card-description {
-      // Font Styling
-      font-size: size(xtra-small);
-      font-weight: weight(low);
-    }
-
-    .Button-container {
-      // Display
-      display: flex;
-      flex-direction: row;
-    }
-    .Card-button {
-      // Text
-      text-decoration: none;
-      // Border
-      border-radius: 5px;
-      // Spacing
-      padding: 5px 10px;
-      margin: 0 0.5rem;
-
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-    .Card-button-link {
-      color: $black;
-      text-decoration: none;
-    }
   }
 }
 
@@ -104,63 +29,44 @@
 @media (max-width: 680px) {
   .Card {
     // Spacing
-    padding: 4rem 2rem 8rem 2rem;
+    // padding: 4rem 2rem 8rem 2rem;
 
     .Card-title {
-      // Font Styling
-      font-size: size(small);
-      font-weight: weight(bold);
-      // Spacing
-      padding: 0 0 2rem 0;
-    }
+      // Text Styling
 
-    .Card-image {
-      // Size
-      width: 100%;
-      height: auto;
-      // Border Properties
-      border-radius: 20px;
+      // Font Styling
+
       // Spacing
-      padding: 0;
-      // Shadow
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
     .Card-container {
       // Spacing
-      margin: 1rem 0;
-      padding: 2rem 1rem;
+
       // Border Properties
-      border-radius: 20px;
+
       // Shadow
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
     .Card-description {
       // Font Styling
-      font-size: size(xtra-small);
-      font-weight: weight(low);
+
+      // Spacing
     }
 
     .Button-container {
       // Display
-      display: flex;
-      flex-direction: row;
     }
     .Card-button {
-      // Text
-      text-decoration: none;
-      // Border
-      border-radius: 5px;
-      // Spacing
-      padding: 5px 10px;
-      margin: 0 0.5rem;
+      // Text Color
 
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      // Border Styling
+
+      // Spacing\
+
+      // Shadow
     }
     .Card-button-link {
-      color: $black;
-      text-decoration: none;
+      // Text Color
     }
   }
 }
@@ -168,99 +74,107 @@
 // Phone Screen Size  ---------------------------
 @media (max-width: 380px) {
   .Card {
-    // Spacing
-    padding: 4rem 2rem 8rem 2rem;
-
-    .Card-title {
-      // Font Styling
-      font-size: size(small);
-      font-weight: weight(bold);
-      // Spacing
-      padding: 0 0 2rem 0;
-    }
-
-    .Card-image {
-      // Size
-      width: 100%;
-      height: auto;
-      // Border Properties
-      border-radius: 20px;
-      // Spacing
-      padding: 0;
-      // Shadow
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
+    background: url("/images/Phone3-zip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // Text/ Font Styling
+    color: $white;
 
     .Card-container {
       // Spacing
-      margin: 1rem 0;
-      padding: 2rem 1rem;
-      // Border Properties
-      border-radius: 20px;
-      // Shadow
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
+      margin: 0;
+      padding: 20rem 1rem 13rem 1rem;
 
-    .Card-description {
-      // Font Styling
-      font-size: size(xtra-small);
-      font-weight: weight(low);
+      // Shadow
+      backdrop-filter: blur(10px);
     }
 
     .Button-container {
       // Display
-      display: flex;
-      flex-direction: row;
+      backdrop-filter: blur(10px);
     }
-    .Card-button {
-      // Text
-      text-decoration: none;
-      // Border
-      border-radius: 5px;
-      // Spacing
-      padding: 5px 10px;
-      margin: 0 0.5rem;
 
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    .Card-button {
+      // Text Color
+
+      // Border Styling
+
+      // Spacing\
+
+      // Shadow
     }
+
     .Card-button-link {
-      color: $black;
+      // Text Color/ Font Style
       text-decoration: none;
     }
   }
+
+  .Card-1 {
+    background: url("/images/Phone1-zip.jpg");
+    text-align: center;
+    .Card-1_title {
+      /* Text Styling - Font Styling */
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(medium);
+      // Spacing
+    }
+
+    .Card-1_description {
+      // Font Styling
+      font-size: size(small);
+      font-weight: weight(med-low);
+    }
+  }
+  .Card-2 {
+    background: url("/images/CBBScreenshot.jpg");
+    color: $white;
+    text-align: center;
+
+    .Card-2_container {
+      backdrop-filter: blur(20px);
+     
+      
+    }
+
+    .Card-2_title {
+      // Text Styling - Font Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(bold);
+      // Spacing
+    }
+
+    .Card-2_description {
+      // Font Styling
+      font-size: size(small);
+      font-weight: weight(medium);
+      // Spacing
+    }
+  }
+  .Card-3 {
+    background: url("/images/Phone3-zip.jpg");
+    text-align: center;
+
+    .Card-3_container {
+      backdrop-filter: blur(20px);
+      
+    }
+
+    .Card-3_title {
+      // Text Styling - Font Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(medium);
+      // Spacing
+    }
+
+    .Card-3_description {
+      // Font Styling
+      font-size: size(small);
+      font-weight: weight(med-low);
+      // Spacing
+    }
+  }
 }
-// // Card 1 ==========
-// .Card-1 {
-
-// }
-
-// .Card-1_title {
-// }
-
-// .Card-1_image {
-
-// }
-// .Card-description_1 {
-// }
-// // Card 2 ==========
-// .Card-2 {
-// }
-
-// .Card-2_title {
-// }
-
-// .Card-2_image {
-// }
-// .Card-description_2 {
-// }
-// // Card 3 ==========
-// .Card-3 {
-// }
-
-// .Card-3_title {
-// }
-
-// .Card-3_image {
-// }
-// .Card-description_3 {
-// }
