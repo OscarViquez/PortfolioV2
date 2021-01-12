@@ -1,6 +1,6 @@
 @import "_font.scss";
 @import "_variable.scss";
-@import "_mixins";
+
 /* */
 .Card {
   // Spacing
@@ -28,65 +28,18 @@
 // Larger Phone Screen ---------
 @media (max-width: 680px) {
   .Card {
-    // Spacing
-    // padding: 4rem 2rem 8rem 2rem;
-
-    .Card-title {
-      // Text Styling
-
-      // Font Styling
-
-      // Spacing
-    }
-
-    .Card-container {
-      // Spacing
-
-      // Border Properties
-
-      // Shadow
-    }
-
-    .Card-description {
-      // Font Styling
-
-      // Spacing
-    }
-
-    .Button-container {
-      // Display
-    }
-    .Card-button {
-      // Text Color
-
-      // Border Styling
-
-      // Spacing\
-
-      // Shadow
-    }
-    .Card-button-link {
-      // Text Color
-    }
-  }
-}
-
-// Phone Screen Size  ---------------------------
-@media (max-width: 380px) {
-  .Card {
-    background: url("/images/Phone3-zip.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    // Text/ Font Styling
     color: $white;
 
     .Card-container {
       // Spacing
       margin: 0;
-      padding: 20rem 1rem 13rem 1rem;
-
+      padding: 15rem 1rem 17rem 1rem;
       // Shadow
       backdrop-filter: blur(10px);
+    }
+
+    .Card-title {
+      padding: 1rem 0;
     }
 
     .Button-container {
@@ -111,12 +64,12 @@
   }
 
   .Card-1 {
-    background: url("/images/Phone1-zip.jpg");
+    background: url("/images/Phone1.jpg");
     text-align: center;
     .Card-1_title {
       /* Text Styling - Font Styling */
       font-family: $Poppins;
-      font-size: size(medium);
+      font-size: size(regular);
       font-weight: weight(medium);
       // Spacing
     }
@@ -134,27 +87,132 @@
 
     .Card-2_container {
       backdrop-filter: blur(20px);
-     
-      
     }
 
     .Card-2_title {
       // Text Styling - Font Styling
       font-family: $Poppins;
-      font-size: size(medium);
+      font-size: size(regular);
       font-weight: weight(bold);
       // Spacing
+      padding: 1rem 0;
     }
 
     .Card-2_description {
       // Font Styling
       font-size: size(small);
-      font-weight: weight(medium);
+      font-weight: weight(low);
       // Spacing
     }
   }
   .Card-3 {
-    background: url("/images/Phone3-zip.jpg");
+    background: url("/images/Phone3.jpg");
+    text-align: center;
+
+    .Card-3_container {
+      backdrop-filter: blur(20px);
+      
+    }
+
+    .Card-3_title {
+      // Text Styling - Font Styling
+      font-family: $Poppins;
+      font-size: size(medium);
+      font-weight: weight(medium);
+      // Spacing
+    }
+
+    .Card-3_description {
+      // Font Styling
+      font-size: size(small);
+      font-weight: weight(med-low);
+      // Spacing
+    }
+  }
+}
+
+// Phone Screen Size  ---------------------------
+@media (max-width: 380px) {
+  .Card {
+    color: $white;
+
+    .Card-container {
+      // Spacing
+      margin: 0;
+      padding: 15rem 1rem 17rem 1rem;
+      // Shadow
+      backdrop-filter: blur(10px);
+    }
+
+    .Card-title {
+      padding: 1rem 0;
+    }
+
+    .Button-container {
+      // Display
+      backdrop-filter: blur(10px);
+    }
+
+    .Card-button {
+      // Text Color
+
+      // Border Styling
+
+      // Spacing\
+
+      // Shadow
+    }
+
+    .Card-button-link {
+      // Text Color/ Font Style
+      text-decoration: none;
+    }
+  }
+
+  .Card-1 {
+    background: url("/images/Phone1.jpg");
+    text-align: center;
+    .Card-1_title {
+      /* Text Styling - Font Styling */
+      font-family: $Poppins;
+      font-size: size(regular);
+      font-weight: weight(medium);
+      // Spacing
+    }
+
+    .Card-1_description {
+      // Font Styling
+      font-size: size(small);
+      font-weight: weight(med-low);
+    }
+  }
+  .Card-2 {
+    background: url("/images/CBBScreenshot.jpg");
+    color: $white;
+    text-align: center;
+
+    .Card-2_container {
+      backdrop-filter: blur(20px);
+    }
+
+    .Card-2_title {
+      // Text Styling - Font Styling
+      font-family: $Poppins;
+      font-size: size(regular);
+      font-weight: weight(bold);
+      // Spacing
+      padding: 1rem 0;
+    }
+
+    .Card-2_description {
+      // Font Styling
+      font-size: size(small);
+      font-weight: weight(low);
+      // Spacing
+    }
+  }
+  .Card-3 {
+    background: url("/images/Phone3.jpg");
     text-align: center;
 
     .Card-3_container {

@@ -78,7 +78,7 @@
 }
 
 .navbar .logo a {
-  color: #9e7cfc;
+  color: whitesmoke;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
@@ -109,7 +109,7 @@
 }
 
 .icon {
-  color: #9e7cfc;
+  color: whitesmoke;
   font-size: 25px;
   cursor: pointer;
   display: none;
@@ -197,6 +197,8 @@
 
 .Intro {
   padding: 25rem 30rem;
+  color: whitesmoke;
+  background: #1b1b1b;
 }
 
 .Intro .Intro-name {
@@ -220,6 +222,37 @@
   margin: 1rem 0;
 }
 
+@media (max-width: 680px) {
+  .Intro {
+    text-align: center;
+    padding: 10rem 1rem 10rem;
+  }
+  .Intro .Intro-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    margin: 5rem 0 1rem 0;
+  }
+  .Intro .Intro-job {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    color: #713eff;
+    margin: 1rem 0rem;
+  }
+  .Intro .Intro-details {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 1rem 0rem;
+  }
+  .Intro .fa-chevron-down {
+    font-size: 35px;
+    color: #713eff;
+    margin: 15rem 0 0 0;
+  }
+}
+
 @media (max-width: 380px) {
   .Intro {
     text-align: center;
@@ -235,6 +268,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 550;
+    color: #713eff;
     margin: 1rem 0rem;
   }
   .Intro .Intro-details {
@@ -245,8 +279,8 @@
   }
   .Intro .fa-chevron-down {
     font-size: 35px;
+    color: #713eff;
     margin: 15rem 0 0 0;
-    scroll-behavior: smooth;
   }
 }
 
@@ -263,18 +297,18 @@
   font-weight: 200;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 680px) {
   .Card {
-    background: url("/images/Phone3-zip.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     color: whitesmoke;
   }
   .Card .Card-container {
     margin: 0;
-    padding: 20rem 1rem 13rem 1rem;
+    padding: 15rem 1rem 17rem 1rem;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+  }
+  .Card .Card-title {
+    padding: 1rem 0;
   }
   .Card .Button-container {
     -webkit-backdrop-filter: blur(10px);
@@ -284,13 +318,13 @@
     text-decoration: none;
   }
   .Card-1 {
-    background: url("/images/Phone1-zip.jpg");
+    background: url("/images/Phone1.jpg");
     text-align: center;
   }
   .Card-1 .Card-1_title {
     /* Text Styling - Font Styling */
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 550;
   }
   .Card-1 .Card-1_description {
@@ -308,15 +342,88 @@
   }
   .Card-2 .Card-2_title {
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
+    padding: 1rem 0;
   }
   .Card-2 .Card-2_description {
     font-size: 20px;
-    font-weight: 550;
+    font-weight: 200;
   }
   .Card-3 {
-    background: url("/images/Phone3-zip.jpg");
+    background: url("/images/Phone3.jpg");
+    text-align: center;
+  }
+  .Card-3 .Card-3_container {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .Card-3 .Card-3_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .Card-3 .Card-3_description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 380px) {
+  .Card {
+    color: whitesmoke;
+  }
+  .Card .Card-container {
+    margin: 0;
+    padding: 15rem 1rem 17rem 1rem;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .Card .Card-title {
+    padding: 1rem 0;
+  }
+  .Card .Button-container {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .Card .Card-button-link {
+    text-decoration: none;
+  }
+  .Card-1 {
+    background: url("/images/Phone1.jpg");
+    text-align: center;
+  }
+  .Card-1 .Card-1_title {
+    /* Text Styling - Font Styling */
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 550;
+  }
+  .Card-1 .Card-1_description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .Card-2 {
+    background: url("/images/CBBScreenshot.jpg");
+    color: whitesmoke;
+    text-align: center;
+  }
+  .Card-2 .Card-2_container {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+  .Card-2 .Card-2_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+  .Card-2 .Card-2_description {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .Card-3 {
+    background: url("/images/Phone3.jpg");
     text-align: center;
   }
   .Card-3 .Card-3_container {
@@ -339,62 +446,124 @@
 }
 
 .About .About-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .About .About-description {
   font-family: "Fauna One", serif;
 }
 
-@media (max-width: 1100px) {
-  .About {
-    padding: 10rem 5rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .About {
-    padding: 10rem 5rem;
-  }
-}
-
 @media (max-width: 868px) {
   .About {
-    padding: 10rem 5rem;
+    padding: 15rem 2rem;
+    background: #1b1b1b;
+    color: whitesmoke;
+  }
+  .About .About-title {
+    padding: 1rem 0;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .About .About-description {
+    padding: 1rem 0;
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 680px) {
+  .About {
+    padding: 15rem 2rem;
+    background: #1b1b1b;
+    color: whitesmoke;
+  }
+  .About .About-title {
+    padding: 1rem 0;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .About .About-description {
+    padding: 1rem 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
   }
 }
 
 @media (max-width: 380px) {
   .About {
+    padding: 15rem 2rem;
+    background: #1b1b1b;
+    color: whitesmoke;
+  }
+  .About .About-title {
+    padding: 1rem 0;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .About .About-description {
+    padding: 1rem 0;
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 680px) {
+  .Contact {
     padding: 10rem 2rem;
+    background: #713eff;
+    color: whitesmoke;
   }
-}
-
-.Contact {
-  padding: 20rem 10rem;
-}
-
-@media (max-width: 1100px) {
-  .Contact {
-    padding: 10rem 5rem;
+  .Contact .Contact-title {
+    padding: 1rem 0;
+    font-size: 35px;
   }
-}
-
-@media (max-width: 900px) {
-  .Contact {
-    padding: 10rem 5rem;
+  .Contact .Contact-description {
+    padding: 0 0 2rem 0;
+    font-size: 20px;
+    font-weight: 550;
   }
-}
-
-@media (max-width: 868px) {
-  .Contact {
-    padding: 10rem 5rem;
+  .Contact .Contact-list_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .Contact .Contact-icons {
+    padding: 0 1rem 0 0;
+    font-size: 35px;
+    color: whitesmoke;
   }
 }
 
 @media (max-width: 380px) {
   .Contact {
     padding: 10rem 2rem;
+    background: #713eff;
+    color: whitesmoke;
+  }
+  .Contact .Contact-title {
+    padding: 1rem 0;
+    font-size: 35px;
+  }
+  .Contact .Contact-description {
+    padding: 0 0 2rem 0;
+    font-weight: 550;
+  }
+  .Contact .Contact-list_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .Contact .Contact-icons {
+    padding: 0 1rem 0 0;
+    font-size: 35px;
+    color: whitesmoke;
   }
 }
 

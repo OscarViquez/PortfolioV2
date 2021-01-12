@@ -49,7 +49,7 @@
   justify-content: space-between;
 }
 .navbar .logo a{
-  color: #9e7cfc;
+  color: $white;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
@@ -73,7 +73,7 @@
 }
 
 .icon{
-  color: #9e7cfc;
+  color: $white;
   font-size: 25px;
   cursor: pointer;
   display: none;

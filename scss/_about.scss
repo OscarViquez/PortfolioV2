@@ -7,7 +7,7 @@
 
   .About-title {
     // Fonts
-    font-family: $Playfair;
+    font-family: $Poppins;
   }
 
   .About-description {
@@ -18,24 +18,86 @@
 // Laptop Screen Size
 @media (max-width: 1100px) {
   .About {
-    padding: 10rem 5rem;
+    
+
+    .About-title {
+    }
+
+    .About-description {
+    }
   }
 }
 // iPad Pro Screen Size
 @media (max-width: 900px) {
   .About {
-    padding: 10rem 5rem;
+    
   }
 }
 // iPad / Tablet Screen size
 @media (max-width: 868px) {
   .About {
-    padding: 10rem 5rem;
+    padding: 15rem 2rem;
+    background: $black;
+    color: $white;
+    .About-title {
+      // Spacing 
+      padding: 1rem 0;
+      // Fonts
+      font-size: size(regular);
+      font-weight: weight(bold);
+    }
+
+    .About-description {
+      // Spacing 
+      padding: 1rem 0;
+       // Fonts
+      font-weight: weight(medium);
+    }
+  }
+}
+// ---------------------------
+@media (max-width: 680px) {
+  .About {
+    padding: 15rem 2rem;
+    background: $black;
+    color: $white;
+    .About-title {
+      // Spacing 
+      padding: 1rem 0;
+      // Fonts
+      font-size: size(regular);
+      font-weight: weight(bold);
+    }
+
+    .About-description {
+      // Spacing 
+      padding: 1rem 0;
+       // Fonts
+       font-family: $Poppins;
+       font-size: size(small);
+      font-weight: weight(med-low);
+    }
   }
 }
 // Phone Screen Size
 @media (max-width: 380px) {
   .About {
-    padding: 10rem 2rem;
+    padding: 15rem 2rem;
+    background: $black;
+    color: $white;
+    .About-title {
+      // Spacing 
+      padding: 1rem 0;
+      // Fonts
+      font-size: size(regular);
+      font-weight: weight(bold);
+    }
+
+    .About-description {
+      // Spacing 
+      padding: 1rem 0;
+       // Fonts
+      font-weight: weight(medium);
+    }
   }
 }
